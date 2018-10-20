@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72040E1FC9BCCD22D4C69340 /* Pods_BilliardsMachingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F1165C3E17B4709D6738B /* Pods_BilliardsMachingUITests.framework */; };
+		88188160FF3A71672F687E28 /* Pods_BilliardsMachingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EC4CF5F2D00874971C1180 /* Pods_BilliardsMachingTests.framework */; };
+		CE486C8C8D253BE1A446FF27 /* Pods_BilliardsMaching.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4ED333A8E05120E1EBA915 /* Pods_BilliardsMaching.framework */; };
+		D61CA5592174DE4100552B89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D61CA5582174DE4000552B89 /* GoogleService-Info.plist */; };
+		D623204D2178BDF4003F127E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = D623204C2178BDF4003F127E /* Const.swift */; };
+		D62320502178C753003F127E /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D623204F2178C753003F127E /* PostData.swift */; };
+		D62320532178CA64003F127E /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62320512178CA64003F127E /* PostTableViewCell.swift */; };
+		D62320542178CA64003F127E /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62320522178CA64003F127E /* PostTableViewCell.xib */; };
+		D62320592178DB4E003F127E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62320582178DB4E003F127E /* PopUpViewController.swift */; };
+		D6257C4521761AF700C32366 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6257C4421761AF700C32366 /* NewAccountViewController.swift */; };
+		D6257C47217621C700C32366 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6257C46217621C700C32366 /* Header.swift */; };
+		D625EB6A2179B09000D0F91A /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625EB692179B09000D0F91A /* UserData.swift */; };
 		D6313A152173853C00116FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6313A142173853C00116FE9 /* AppDelegate.swift */; };
 		D6313A172173853C00116FE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6313A162173853C00116FE9 /* ViewController.swift */; };
 		D6313A1A2173853C00116FE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6313A182173853C00116FE9 /* Main.storyboard */; };
@@ -14,6 +26,11 @@
 		D6313A1F2173853F00116FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6313A1D2173853F00116FE9 /* LaunchScreen.storyboard */; };
 		D6313A2A2173853F00116FE9 /* BilliardsMachingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6313A292173853F00116FE9 /* BilliardsMachingTests.swift */; };
 		D6313A352173853F00116FE9 /* BilliardsMachingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6313A342173853F00116FE9 /* BilliardsMachingUITests.swift */; };
+		D6313A43217385DC00116FE9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6313A42217385DB00116FE9 /* HomeViewController.swift */; };
+		D6313A472173864300116FE9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6313A462173864300116FE9 /* LoginViewController.swift */; };
+		D6313A492173865700116FE9 /* CreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6313A482173865700116FE9 /* CreateViewController.swift */; };
+		D6313A4B2173866B00116FE9 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6313A4A2173866B00116FE9 /* MypageViewController.swift */; };
+		D6313A4D2173869000116FE9 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6313A4C2173869000116FE9 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +51,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03F5AABFBC5608472E3DF85F /* Pods-BilliardsMaching.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BilliardsMaching.release.xcconfig"; path = "Pods/Target Support Files/Pods-BilliardsMaching/Pods-BilliardsMaching.release.xcconfig"; sourceTree = "<group>"; };
+		09613709088756A4BB69CE5E /* Pods-BilliardsMachingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BilliardsMachingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BilliardsMachingTests/Pods-BilliardsMachingTests.release.xcconfig"; sourceTree = "<group>"; };
+		1A64DF7A18DFB98BF8666CFD /* Pods-BilliardsMaching.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BilliardsMaching.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BilliardsMaching/Pods-BilliardsMaching.debug.xcconfig"; sourceTree = "<group>"; };
+		4B4ED333A8E05120E1EBA915 /* Pods_BilliardsMaching.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BilliardsMaching.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8EC4CF5F2D00874971C1180 /* Pods_BilliardsMachingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BilliardsMachingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1208BB68D6C6D5F171052DE /* Pods-BilliardsMachingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BilliardsMachingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BilliardsMachingTests/Pods-BilliardsMachingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C244EBDB9DF82F4545BE1A16 /* Pods-BilliardsMachingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BilliardsMachingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BilliardsMachingUITests/Pods-BilliardsMachingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D00F1165C3E17B4709D6738B /* Pods_BilliardsMachingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BilliardsMachingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61CA5582174DE4000552B89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D623204C2178BDF4003F127E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		D623204F2178C753003F127E /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		D62320512178CA64003F127E /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		D62320522178CA64003F127E /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		D62320582178DB4E003F127E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		D6257C4421761AF700C32366 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
+		D6257C46217621C700C32366 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		D625EB692179B09000D0F91A /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		D6313A112173853C00116FE9 /* BilliardsMaching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BilliardsMaching.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6313A142173853C00116FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6313A162173853C00116FE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +81,12 @@
 		D6313A302173853F00116FE9 /* BilliardsMachingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BilliardsMachingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6313A342173853F00116FE9 /* BilliardsMachingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilliardsMachingUITests.swift; sourceTree = "<group>"; };
 		D6313A362173853F00116FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6313A42217385DB00116FE9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D6313A462173864300116FE9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D6313A482173865700116FE9 /* CreateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewController.swift; sourceTree = "<group>"; };
+		D6313A4A2173866B00116FE9 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		D6313A4C2173869000116FE9 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		FDE11E0CA211709C6103D35C /* Pods-BilliardsMachingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BilliardsMachingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BilliardsMachingUITests/Pods-BilliardsMachingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE486C8C8D253BE1A446FF27 /* Pods_BilliardsMaching.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88188160FF3A71672F687E28 /* Pods_BilliardsMachingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +110,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72040E1FC9BCCD22D4C69340 /* Pods_BilliardsMachingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B7A686F4AA52C1CD9471BAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A64DF7A18DFB98BF8666CFD /* Pods-BilliardsMaching.debug.xcconfig */,
+				03F5AABFBC5608472E3DF85F /* Pods-BilliardsMaching.release.xcconfig */,
+				B1208BB68D6C6D5F171052DE /* Pods-BilliardsMachingTests.debug.xcconfig */,
+				09613709088756A4BB69CE5E /* Pods-BilliardsMachingTests.release.xcconfig */,
+				FDE11E0CA211709C6103D35C /* Pods-BilliardsMachingUITests.debug.xcconfig */,
+				C244EBDB9DF82F4545BE1A16 /* Pods-BilliardsMachingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7F4B0201AE2F0E6D35D2E08F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B4ED333A8E05120E1EBA915 /* Pods_BilliardsMaching.framework */,
+				A8EC4CF5F2D00874971C1180 /* Pods_BilliardsMachingTests.framework */,
+				D00F1165C3E17B4709D6738B /* Pods_BilliardsMachingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D623204E2178C03A003F127E /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				D6313A462173864300116FE9 /* LoginViewController.swift */,
+				D6257C4421761AF700C32366 /* NewAccountViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		D62320552178CA7D003F127E /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D6313A1D2173853F00116FE9 /* LaunchScreen.storyboard */,
+				D6313A182173853C00116FE9 /* Main.storyboard */,
+				D62320522178CA64003F127E /* PostTableViewCell.xib */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		D62320562178CAA0003F127E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D6313A142173853C00116FE9 /* AppDelegate.swift */,
+				D6313A162173853C00116FE9 /* ViewController.swift */,
+				D6313A42217385DB00116FE9 /* HomeViewController.swift */,
+				D6313A482173865700116FE9 /* CreateViewController.swift */,
+				D6313A4A2173866B00116FE9 /* MypageViewController.swift */,
+				D6313A4C2173869000116FE9 /* ChatViewController.swift */,
+				D62320512178CA64003F127E /* PostTableViewCell.swift */,
+				D62320582178DB4E003F127E /* PopUpViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D62320572178CABF003F127E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D6257C46217621C700C32366 /* Header.swift */,
+				D623204C2178BDF4003F127E /* Const.swift */,
+				D623204F2178C753003F127E /* PostData.swift */,
+				D625EB692179B09000D0F91A /* UserData.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		D6313A082173853C00116FE9 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +192,8 @@
 				D6313A282173853F00116FE9 /* BilliardsMachingTests */,
 				D6313A332173853F00116FE9 /* BilliardsMachingUITests */,
 				D6313A122173853C00116FE9 /* Products */,
+				4B7A686F4AA52C1CD9471BAB /* Pods */,
+				7F4B0201AE2F0E6D35D2E08F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +210,13 @@
 		D6313A132173853C00116FE9 /* BilliardsMaching */ = {
 			isa = PBXGroup;
 			children = (
-				D6313A142173853C00116FE9 /* AppDelegate.swift */,
-				D6313A162173853C00116FE9 /* ViewController.swift */,
-				D6313A182173853C00116FE9 /* Main.storyboard */,
-				D6313A1B2173853F00116FE9 /* Assets.xcassets */,
-				D6313A1D2173853F00116FE9 /* LaunchScreen.storyboard */,
+				D62320552178CA7D003F127E /* Storyboard */,
+				D623204E2178C03A003F127E /* Account */,
+				D62320562178CAA0003F127E /* Main */,
+				D62320572178CABF003F127E /* Common */,
 				D6313A202173853F00116FE9 /* Info.plist */,
+				D6313A1B2173853F00116FE9 /* Assets.xcassets */,
+				D61CA5582174DE4000552B89 /* GoogleService-Info.plist */,
 			);
 			path = BilliardsMaching;
 			sourceTree = "<group>";
@@ -132,9 +246,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6313A392173853F00116FE9 /* Build configuration list for PBXNativeTarget "BilliardsMaching" */;
 			buildPhases = (
+				84E0D86FFB66E877D4DDC865 /* [CP] Check Pods Manifest.lock */,
 				D6313A0D2173853C00116FE9 /* Sources */,
 				D6313A0E2173853C00116FE9 /* Frameworks */,
 				D6313A0F2173853C00116FE9 /* Resources */,
+				9B3D261A0568CFF0AB9F3C0E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6313A3C2173853F00116FE9 /* Build configuration list for PBXNativeTarget "BilliardsMachingTests" */;
 			buildPhases = (
+				DDE247618FBBD80636339D10 /* [CP] Check Pods Manifest.lock */,
 				D6313A212173853F00116FE9 /* Sources */,
 				D6313A222173853F00116FE9 /* Frameworks */,
 				D6313A232173853F00116FE9 /* Resources */,
@@ -167,6 +284,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6313A3F2173853F00116FE9 /* Build configuration list for PBXNativeTarget "BilliardsMachingUITests" */;
 			buildPhases = (
+				4CC37970DE3A16474E461BB5 /* [CP] Check Pods Manifest.lock */,
 				D6313A2C2173853F00116FE9 /* Sources */,
 				D6313A2D2173853F00116FE9 /* Frameworks */,
 				D6313A2E2173853F00116FE9 /* Resources */,
@@ -230,8 +348,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6313A1F2173853F00116FE9 /* LaunchScreen.storyboard in Resources */,
+				D62320542178CA64003F127E /* PostTableViewCell.xib in Resources */,
 				D6313A1C2173853F00116FE9 /* Assets.xcassets in Resources */,
 				D6313A1A2173853C00116FE9 /* Main.storyboard in Resources */,
+				D61CA5592174DE4100552B89 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +371,112 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CC37970DE3A16474E461BB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BilliardsMachingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84E0D86FFB66E877D4DDC865 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BilliardsMaching-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B3D261A0568CFF0AB9F3C0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BilliardsMaching/Pods-BilliardsMaching-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CLImageEditor/CLImageEditor.framework",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController/ESTabBarController.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CLImageEditor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BilliardsMaching/Pods-BilliardsMaching-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE247618FBBD80636339D10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BilliardsMachingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D6313A0D2173853C00116FE9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6257C47217621C700C32366 /* Header.swift in Sources */,
 				D6313A172173853C00116FE9 /* ViewController.swift in Sources */,
+				D625EB6A2179B09000D0F91A /* UserData.swift in Sources */,
 				D6313A152173853C00116FE9 /* AppDelegate.swift in Sources */,
+				D6313A4D2173869000116FE9 /* ChatViewController.swift in Sources */,
+				D6313A4B2173866B00116FE9 /* MypageViewController.swift in Sources */,
+				D6313A492173865700116FE9 /* CreateViewController.swift in Sources */,
+				D6257C4521761AF700C32366 /* NewAccountViewController.swift in Sources */,
+				D62320592178DB4E003F127E /* PopUpViewController.swift in Sources */,
+				D6313A43217385DC00116FE9 /* HomeViewController.swift in Sources */,
+				D6313A472173864300116FE9 /* LoginViewController.swift in Sources */,
+				D62320502178C753003F127E /* PostData.swift in Sources */,
+				D623204D2178BDF4003F127E /* Const.swift in Sources */,
+				D62320532178CA64003F127E /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +647,7 @@
 		};
 		D6313A3A2173853F00116FE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A64DF7A18DFB98BF8666CFD /* Pods-BilliardsMaching.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -446,6 +666,7 @@
 		};
 		D6313A3B2173853F00116FE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03F5AABFBC5608472E3DF85F /* Pods-BilliardsMaching.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +685,7 @@
 		};
 		D6313A3D2173853F00116FE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1208BB68D6C6D5F171052DE /* Pods-BilliardsMachingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -485,6 +707,7 @@
 		};
 		D6313A3E2173853F00116FE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09613709088756A4BB69CE5E /* Pods-BilliardsMachingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +729,7 @@
 		};
 		D6313A402173853F00116FE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDE11E0CA211709C6103D35C /* Pods-BilliardsMachingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -526,6 +750,7 @@
 		};
 		D6313A412173853F00116FE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C244EBDB9DF82F4545BE1A16 /* Pods-BilliardsMachingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
