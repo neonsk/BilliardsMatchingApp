@@ -8,10 +8,20 @@
 
 import UIKit
 
-class  header : NSObject {
-    var backGroundColor : UIColor!
+class  header : UILabel {
     
-    override init() {
-        backGroundColor = UIColor.lightGray
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setUpColor()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setUpColor()
+    }
+    func setUpColor(){
+        self.backgroundColor = UIColor.hex(string: "42C24F", alpha: 1)
+        self.textColor = UIColor.white
+        self.font = UIFont.boldSystemFont(ofSize: 17)
     }
 }

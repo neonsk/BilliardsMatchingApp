@@ -15,12 +15,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var mailAddressTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var headerLabel: UILabel!
-    var myHeader : header = header()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        headerLabel.backgroundColor = myHeader.backGroundColor
-        //headerLabel.backgroundColor = UIColor.lightGray
     }
     
     override func didReceiveMemoryWarning() {

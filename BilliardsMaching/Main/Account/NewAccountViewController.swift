@@ -48,11 +48,14 @@ class NewAccountViewController: UIViewController {
                             return
                         }
                         let postRef = Database.database().reference().child(Const.User)
-                        let postDic = ["name": userName, "sex": "test", "prefecture":"", "hometown":"", "skillLevel": "", "introduce": ""]
+                        let postDic = ["name": userName, "sex": "", "prefecture":"", "hometown":"", "skillLevel": "", "introduce": "", "profileURL": ""]
                         postRef.child(user.uid).setValue(postDic)
                         print("uid = \(user.uid)")
-                        
                         print("DEBUG_PRINT: [displayName = \(user.displayName!)]の設定に成功しました。")
+                        
+                        let chatRef = Database.database().reference().child("chats")
+                        chatRef.updateChildValues(["\(user.uid)": ""])
+                        print("DEBUG_PRINT: chatsへの追加が完了")
                         
                         // 画面を閉じてViewControllerに戻る
                         self.dismiss(animated: true, completion: nil)
@@ -66,6 +69,9 @@ class NewAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    @IBAction func backButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

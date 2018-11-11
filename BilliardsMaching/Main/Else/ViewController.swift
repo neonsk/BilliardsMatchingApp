@@ -28,8 +28,9 @@ class ViewController: UIViewController {
         let tabBarController: ESTabBarController! = ESTabBarController(tabIconNames: ["home","camera","setting"])
         
         // 背景色、選択時の色を設定する
-        tabBarController.selectedColor = UIColor(red: 1.0, green: 0.44, blue: 0.11, alpha: 1)
-        tabBarController.buttonsBackgroundColor = UIColor(red: 0.96, green: 0.91, blue: 0.87, alpha: 1)
+        tabBarController.selectedColor = UIColor.hex(string: "42C24F", alpha: 1)
+        tabBarController.buttonsBackgroundColor = UIColor.hex(string: "62D34F", alpha: 0.3)
+        
         tabBarController.selectionIndicatorHeight = 3
         
         // 作成したESTabBarControllerを親のViewController（＝self）に追加する
@@ -49,10 +50,13 @@ class ViewController: UIViewController {
         // タブをタップした時に表示するViewControllerを設定する
         let homeViewController = storyboard?.instantiateViewController(withIdentifier: "Home")
         let mypageViewController = storyboard?.instantiateViewController(withIdentifier: "Mypage")
-        let chatViewController = storyboard?.instantiateViewController(withIdentifier: "Chat")
+        let chatAllViewController = storyboard?.instantiateViewController(withIdentifier: "ChatAll")
+        
         
         tabBarController.setView(homeViewController, at: 0)
-        tabBarController.setView(chatViewController, at: 1)
+        //tabBarController.setView(chatViewController, at: 1)
+        tabBarController.setView(chatAllViewController, at: 1)
+        //tabBarController.setView(chatOneViewController, at: 1)
         tabBarController.setView(mypageViewController, at: 2)
         
         // 真ん中のタブはボタンとして扱う
@@ -65,6 +69,7 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+                
         // currentUserがnilならログインしていない
         if Auth.auth().currentUser == nil {
             let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")

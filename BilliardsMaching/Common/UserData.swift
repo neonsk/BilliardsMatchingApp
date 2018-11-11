@@ -12,6 +12,7 @@ import Firebase
 import FirebaseDatabase
 
 class UserData: NSObject {
+    var uid: String?
     var name: String?
     var sex: String?
     var prefecture: String?
@@ -19,8 +20,10 @@ class UserData: NSObject {
     var skillLevel: String?
     var introduce: String?
     var profileURL: String?
+    var nowPostFlag: String?
     
     init(snapshot: DataSnapshot, myId: String) {
+        self.uid = snapshot.key
         let valueDictionary = snapshot.value as! [String: Any]
         self.name = valueDictionary["name"] as? String 
         self.sex = valueDictionary["sex"] as? String
@@ -29,5 +32,6 @@ class UserData: NSObject {
         self.skillLevel = valueDictionary["skillLevel"] as? String
         self.introduce = valueDictionary["introduce"] as? String
         self.profileURL = valueDictionary["profileURL"] as? String
+        self.nowPostFlag = valueDictionary["nowPostFlag"] as? String
     }
 }
