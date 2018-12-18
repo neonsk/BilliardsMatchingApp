@@ -44,6 +44,8 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         super.viewDidLoad()
         print("DEBUG_PRINT: Viewdidload")
         tableViewSet()
+        let setStatusBar = SetStatusBar()
+        setStatusBar.setUp(self.view)
     }
     
     func fetchPosts() {
@@ -210,31 +212,6 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         self.tableView.reloadData()
         refreshControl.endRefreshing()
     }
-//    func myPostDelete(){
-//        //popupViewにて自分の投稿を削除した時
-//        print("tableview = \(tableView)")
-//        print("command " + self.command)
-////        if command == "delete"{
-////            let postsRef = Database.database().reference().child(Const.PostPath)
-////            postsRef.observe(.value, with: { snapshot in
-//                print("DEBUG_PRINT: .ChildがDeleteされました。")
-//                if let uid = Auth.auth().currentUser?.uid {
-//                    let postData = PostData(snapshot: snapshot, myId: uid)
-//                    self.postArray.insert(postData, at: 0)
-//                }
-//                print("削除後：postArray = \(self.postArray)")
-//                //self.tableView.reloadData()
-//
-//                self.command = ""
-////                self.tableView.beginUpdates()
-////                self.tableView.reloadData()
-////                self.tableView.endUpdates()
-////                DispatchQueue.main.async {
-////                }
-//            })
-//        }
-//    }
-    
     func tableViewSet(){
         tableView.delegate = self
         tableView.dataSource = self
@@ -249,6 +226,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         // 高さ概算値 = 「縦横比1:1のUIImageViewの高さ(=画面幅)」+「いいねボタン、キャプションラベル、その他余白の高さの合計概算(=100pt)」
         tableView.estimatedRowHeight = UIScreen.main.bounds.width + 100
         
+        tableView.tableFooterView = UIView()
         
         //下に引っ張って更新
         self.refreshControl = UIRefreshControl()

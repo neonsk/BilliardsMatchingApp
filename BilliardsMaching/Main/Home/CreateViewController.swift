@@ -55,6 +55,8 @@ class CreateViewController: UIViewController{
         dismiss(animated: true, completion: nil)
     }
     override func viewWillAppear(_ animated: Bool) {
+        let setStatusBar = SetStatusBar()
+        setStatusBar.setUp(self.view)
         self.dateFormatter.dateFormat = "yyyy/MM/dd"
         self.createDate = self.dateFormatter.string(from: now as Date)
         dateTextField.text = createDate
@@ -65,6 +67,8 @@ class CreateViewController: UIViewController{
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let setStatusBar = SetStatusBar()
+        setStatusBar.setUp(self.view)
     }
     override func viewWillDisappear(_ animated: Bool) {
         print("ページを去りました。createFlag = \(self.createFlag)")

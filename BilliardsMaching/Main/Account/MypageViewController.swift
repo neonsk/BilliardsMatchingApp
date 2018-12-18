@@ -27,6 +27,7 @@ class MypageViewController: UIViewController,UIImagePickerControllerDelegate,UIN
     
     var observing = false
     var currentUid : String = ""
+    var profileUploadFlag : profileImageUploadFlag = .not
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,8 @@ class MypageViewController: UIViewController,UIImagePickerControllerDelegate,UIN
         profileImageView.image = UIImage(named: "noImage.jpg")!
         profileImageView.layer.cornerRadius = profileImageView.frame.width/2
         profileImageView.clipsToBounds = true
+        let setStatusBar = SetStatusBar()
+        setStatusBar.setUp(self.view)
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -48,9 +51,12 @@ class MypageViewController: UIViewController,UIImagePickerControllerDelegate,UIN
             }
             self.currentUid = uid
             
-            if self.observing == false {
+            if self.observing == false{
                 let userRef = Database.database().reference().child(Const.User).child(uid)
                 userRef.observe(.value, with: { snapshot in
+                    if self.profileUploadFlag == .upload{
+                        return
+                    }
                     print("uid = \(uid)")
                     
                     if let uid = Auth.auth().currentUser?.uid {
@@ -75,17 +81,12 @@ class MypageViewController: UIViewController,UIImagePickerControllerDelegate,UIN
                         print("currentUid = \(self.currentUid), uid=\(uid)")
                         if self.currentUid == uid {
                             let islandRef = Storage.storage().reference().child(userData.profileURL!)
-                            print("islandRef = \(islandRef)")
                             islandRef.getData(maxSize: 300 * 1024 * 1024) { data, error in
                                 if let error = error {
                                     print("error = \(error)")
                                 } else {
-                                    print("data = \(data!)")
-                                    print("変更前：profileImageView.image = \(self.profileImageView.image!)")
                                     let image = UIImage(data: data!)
                                     self.profileImageView.image = image!
-                                    print("image = \(image!)")
-                                    print("変更後：profileImageView.image = \(self.profileImageView.image!)")
                                 }
                             }
                         }
@@ -148,20 +149,35 @@ class MypageViewController: UIViewController,UIImagePickerControllerDelegate,UIN
         picker.dismiss(animated: true, completion: nil)
     }
     
+    enum profileImageUploadFlag{
+        case upload
+        case not
+    }
     // CLImageEditorで加工が終わったときに呼ばれるメソッド
     func imageEditor(_ editor: CLImageEditor!, didFinishEditingWith image: UIImage!) {
+        print("// CLImageEditorで加工が終わったときに呼ばれるメソッド")
+        profileUploadFlag = .upload
         let uid = Auth.auth().currentUser?.uid
-        self.profileImageView.image = image!
+        let scaleSize = 0.05
+        let sizeWidth = image.size.width
+        let sizeHeight = image.size.height
+        print("image width = \(sizeWidth),  height = \(sizeHeight)")
+        let resizeImage = image.reSizeImage(reSize: CGSize(width: Double(sizeWidth) * scaleSize, height: Double(sizeHeight) * scaleSize))
+        print("resizeImage width = \(resizeImage.size.width),  height = \(resizeImage.size.height)")
+        self.profileImageView.image = resizeImage
         let storage = Storage.storage()
         let storageRef = storage.reference()
         // UIImagePNGRepresentationでUIImageをNSDataに変換
-        if let data = UIImagePNGRepresentation(image!) {
+        if let data = UIImagePNGRepresentation(resizeImage) {
             let reference = storageRef.child("images/" + uid! + "/" + "profile.jpg")
             reference.putData(data, metadata: nil, completion: { metaData, error in
                 let userRef = Database.database().reference().child(Const.User).child(uid!)
                 userRef.updateChildValues(["profileURL": "images/" + uid! + "/" + "profile.jpg"])
                 print(metaData as Any)
                 print(error as Any)
+                print("アップロード完了")
+                self.profileUploadFlag = .not
+                
             })
             dismiss(animated: true, completion: nil)
         }

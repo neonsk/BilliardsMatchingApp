@@ -33,18 +33,9 @@ class ChatAllViewController: UIViewController{
         print("DEBUG_PRINT: Viewdidload")
         let uid = Auth.auth().currentUser?.uid
         currentUid = uid
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.allowsSelection = false
-        
-        let nib = UINib(nibName: "ChatTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "ChatCell")
-        
-        // テーブル行の高さをAutoLayoutで自動調整する
-        tableView.rowHeight = UITableViewAutomaticDimension
-        // テーブル行の高さの概算値を設定しておく
-        // 高さ概算値 = 「縦横比1:1のUIImageViewの高さ(=画面幅)」+「いいねボタン、キャプションラベル、その他余白の高さの合計概算(=100pt)」
-        tableView.estimatedRowHeight = UIScreen.main.bounds.width + 100
+        setTableView()
+        let setStatusBar = SetStatusBar()
+        setStatusBar.setUp(self.view)
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -182,6 +173,22 @@ class ChatAllViewController: UIViewController{
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func setTableView(){
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.allowsSelection = false
+        
+        let nib = UINib(nibName: "ChatTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "ChatCell")
+        
+        // テーブル行の高さをAutoLayoutで自動調整する
+        tableView.rowHeight = UITableViewAutomaticDimension
+        // テーブル行の高さの概算値を設定しておく
+        // 高さ概算値 = 「縦横比1:1のUIImageViewの高さ(=画面幅)」+「いいねボタン、キャプションラベル、その他余白の高さの合計概算(=100pt)」
+        tableView.estimatedRowHeight = UIScreen.main.bounds.width + 100
+        
+        tableView.tableFooterView = UIView()
     }
     
 }

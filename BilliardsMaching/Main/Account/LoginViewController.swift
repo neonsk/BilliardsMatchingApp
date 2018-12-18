@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let setStatusBar = SetStatusBar()
+        setStatusBar.setUp(self.view)
     }
     
     override func didReceiveMemoryWarning() {

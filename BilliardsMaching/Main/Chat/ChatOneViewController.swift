@@ -89,6 +89,8 @@ class ChatOneViewController: MessagesViewController {
         messageInputBar.delegate = self
         messageInputBar.sendButton.tintColor = UIColor.lightGray
         
+        let setStatusBar = SetStatusBar()
+        setStatusBar.setUp(self.view)
         
         //        // メッセージ入力欄の左に画像選択ボタンを追加
         //        // 画像選択とかしたいときに

@@ -50,6 +50,7 @@ class ViewController: UIViewController {
         // タブをタップした時に表示するViewControllerを設定する
         let homeViewController = storyboard?.instantiateViewController(withIdentifier: "Home")
         let mypageViewController = storyboard?.instantiateViewController(withIdentifier: "Mypage")
+        let mypageDisplayViewController = storyboard?.instantiateViewController(withIdentifier: "MypageDisplay")
         let chatAllViewController = storyboard?.instantiateViewController(withIdentifier: "ChatAll")
         
         
@@ -58,6 +59,7 @@ class ViewController: UIViewController {
         tabBarController.setView(chatAllViewController, at: 1)
         //tabBarController.setView(chatOneViewController, at: 1)
         tabBarController.setView(mypageViewController, at: 2)
+        //tabBarController.setView(mypageDisplayViewController, at: 2)
         
         // 真ん中のタブはボタンとして扱う
         /*tabBarController.highlightButton(at: 1)

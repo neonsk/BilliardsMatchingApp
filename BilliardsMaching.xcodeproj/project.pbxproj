@@ -10,15 +10,18 @@
 		72040E1FC9BCCD22D4C69340 /* Pods_BilliardsMachingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00F1165C3E17B4709D6738B /* Pods_BilliardsMachingUITests.framework */; };
 		88188160FF3A71672F687E28 /* Pods_BilliardsMachingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8EC4CF5F2D00874971C1180 /* Pods_BilliardsMachingTests.framework */; };
 		CE486C8C8D253BE1A446FF27 /* Pods_BilliardsMaching.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4ED333A8E05120E1EBA915 /* Pods_BilliardsMaching.framework */; };
+		D6179FB821A130CD00386E9E /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6179FB721A130CD00386E9E /* UIImage+Extension.swift */; };
 		D61C45302197F2C0008911B3 /* UIToolbarTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61C452F2197F2C0008911B3 /* UIToolbarTextField.swift */; };
 		D61CA5592174DE4100552B89 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D61CA5582174DE4000552B89 /* GoogleService-Info.plist */; };
 		D61E145A218EBF2E0045F76D /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E1459218EBF2E0045F76D /* UIView+Extension.swift */; };
 		D61E145C218EC1A60045F76D /* UIToolbarLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61E145B218EC1A60045F76D /* UIToolbarLabel.swift */; };
+		D621821421AA6EF20012D53A /* MypageDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D621821321AA6EF20012D53A /* MypageDisplayViewController.swift */; };
 		D623204D2178BDF4003F127E /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = D623204C2178BDF4003F127E /* Const.swift */; };
 		D62320502178C753003F127E /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D623204F2178C753003F127E /* PostData.swift */; };
 		D62320532178CA64003F127E /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62320512178CA64003F127E /* PostTableViewCell.swift */; };
 		D62320542178CA64003F127E /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62320522178CA64003F127E /* PostTableViewCell.xib */; };
 		D62320592178DB4E003F127E /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62320582178DB4E003F127E /* PopUpViewController.swift */; };
+		D6239F8321986CE400391204 /* SetStatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6239F8221986CE400391204 /* SetStatusBar.swift */; };
 		D6251DB2217DFF92000D0569 /* ChatAllViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6251DB1217DFF92000D0569 /* ChatAllViewController.swift */; };
 		D6251DB5217E028C000D0569 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6251DB3217E028C000D0569 /* ChatTableViewCell.swift */; };
 		D6251DB6217E028C000D0569 /* ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6251DB4217E028C000D0569 /* ChatTableViewCell.xib */; };
@@ -70,15 +73,18 @@
 		B1208BB68D6C6D5F171052DE /* Pods-BilliardsMachingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BilliardsMachingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BilliardsMachingTests/Pods-BilliardsMachingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C244EBDB9DF82F4545BE1A16 /* Pods-BilliardsMachingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BilliardsMachingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BilliardsMachingUITests/Pods-BilliardsMachingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D00F1165C3E17B4709D6738B /* Pods_BilliardsMachingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BilliardsMachingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6179FB721A130CD00386E9E /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		D61C452F2197F2C0008911B3 /* UIToolbarTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIToolbarTextField.swift; sourceTree = "<group>"; };
 		D61CA5582174DE4000552B89 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D61E1459218EBF2E0045F76D /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		D61E145B218EC1A60045F76D /* UIToolbarLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIToolbarLabel.swift; sourceTree = "<group>"; };
+		D621821321AA6EF20012D53A /* MypageDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageDisplayViewController.swift; sourceTree = "<group>"; };
 		D623204C2178BDF4003F127E /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		D623204F2178C753003F127E /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		D62320512178CA64003F127E /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		D62320522178CA64003F127E /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		D62320582178DB4E003F127E /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		D6239F8221986CE400391204 /* SetStatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetStatusBar.swift; sourceTree = "<group>"; };
 		D6251DB1217DFF92000D0569 /* ChatAllViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAllViewController.swift; sourceTree = "<group>"; };
 		D6251DB3217E028C000D0569 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		D6251DB4217E028C000D0569 /* ChatTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatTableViewCell.xib; sourceTree = "<group>"; };
@@ -167,6 +173,7 @@
 			children = (
 				D61E1459218EBF2E0045F76D /* UIView+Extension.swift */,
 				D62ABFC521930A4900534D3A /* UIColor+Extension.swift */,
+				D6179FB721A130CD00386E9E /* UIImage+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -177,6 +184,7 @@
 				D6313A462173864300116FE9 /* LoginViewController.swift */,
 				D6257C4421761AF700C32366 /* NewAccountViewController.swift */,
 				D6313A4A2173866B00116FE9 /* MypageViewController.swift */,
+				D621821321AA6EF20012D53A /* MypageDisplayViewController.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -210,12 +218,20 @@
 				D62721F321947D110081EBD4 /* ButtonClass.swift */,
 				D61E145B218EC1A60045F76D /* UIToolbarLabel.swift */,
 				D61C452F2197F2C0008911B3 /* UIToolbarTextField.swift */,
+				D6239F8221986CE400391204 /* SetStatusBar.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D6239F8421986D0800391204 /* FirebaseDB */ = {
+			isa = PBXGroup;
+			children = (
 				D623204C2178BDF4003F127E /* Const.swift */,
 				D623204F2178C753003F127E /* PostData.swift */,
 				D625EB692179B09000D0F91A /* UserData.swift */,
 				D6251DB7217E0459000D0569 /* ChatData.swift */,
 			);
-			path = Common;
+			path = FirebaseDB;
 			sourceTree = "<group>";
 		};
 		D627FA50217F4BE5006CA175 /* Chat */ = {
@@ -279,8 +295,9 @@
 				D62320552178CA7D003F127E /* Storyboard */,
 				D62320562178CAA0003F127E /* Main */,
 				D62320572178CABF003F127E /* Common */,
-				D6313A202173853F00116FE9 /* Info.plist */,
+				D6239F8421986D0800391204 /* FirebaseDB */,
 				D6313A1B2173853F00116FE9 /* Assets.xcassets */,
+				D6313A202173853F00116FE9 /* Info.plist */,
 				D61CA5582174DE4000552B89 /* GoogleService-Info.plist */,
 			);
 			path = BilliardsMaching;
@@ -540,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D64D01DA2180AA0800FDD782 /* MockMessage.swift in Sources */,
+				D621821421AA6EF20012D53A /* MypageDisplayViewController.swift in Sources */,
 				D6257C47217621C700C32366 /* Header.swift in Sources */,
 				D6313A172173853C00116FE9 /* ViewController.swift in Sources */,
 				D62ABFC621930A4900534D3A /* UIColor+Extension.swift in Sources */,
@@ -549,8 +567,10 @@
 				D6251DB5217E028C000D0569 /* ChatTableViewCell.swift in Sources */,
 				D6313A4B2173866B00116FE9 /* MypageViewController.swift in Sources */,
 				D64D01D82180A91D00FDD782 /* ChatOneViewController.swift in Sources */,
+				D6239F8321986CE400391204 /* SetStatusBar.swift in Sources */,
 				D6313A492173865700116FE9 /* CreateViewController.swift in Sources */,
 				D62721F421947D110081EBD4 /* ButtonClass.swift in Sources */,
+				D6179FB821A130CD00386E9E /* UIImage+Extension.swift in Sources */,
 				D6251DB2217DFF92000D0569 /* ChatAllViewController.swift in Sources */,
 				D6257C4521761AF700C32366 /* NewAccountViewController.swift in Sources */,
 				D62320592178DB4E003F127E /* PopUpViewController.swift in Sources */,

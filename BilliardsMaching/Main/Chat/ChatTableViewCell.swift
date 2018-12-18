@@ -47,7 +47,8 @@ class ChatTableViewCell: UITableViewCell {
             }
             self.userLabel.text = userData.name!
         })
-        self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width * 0.1
+        profileImageView.layer.cornerRadius = profileImageView.frame.width/2
+        profileImageView.clipsToBounds = true
     }
     
 }
